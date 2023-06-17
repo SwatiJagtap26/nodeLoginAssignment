@@ -1,0 +1,35 @@
+.heading{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+.form-head{
+    border: 2px solid black;
+    height: 200px;
+    width: 500px;
+    align-items: center;
+    margin: auto;
+}
+.formsub{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.formsub input{
+    width: 80%;
+}
+.formsub button{
+    width: 25%;
+    background-color: rgb(10, 82, 87);
+    color: white;
+    height: 30px;
+    cursor: pointer;
+}
+.formsub button:hover{
+  background-color: rgb(37, 177, 177);
+}
+.form-head a{
+    margin-left: 10px;
+}
+.form-head a:hover{
+    color: rgb(255, 101, 40);
+}
