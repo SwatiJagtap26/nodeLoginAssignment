@@ -17,15 +17,16 @@ router.post("/signup", async(req, res) =>{
         password:req.body.password,
     }
     await collection.insertMany([data]);
-    res.render("home")
+    res.send("Successfully Sign IN")
+    // res.render("home")
 })
 
 router.post("/login", async(req, res) =>{
    try{
  const check = await collection.findOne({email: req.body.email})
   if(check.password === req.body.password){
-    
-    res.render("home")
+    res.send("Success")
+    // res.render("home")
   }
  else{
     res.send("Wrong Password")
